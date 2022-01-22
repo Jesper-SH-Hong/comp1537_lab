@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <title>Tables & Pseudo-CSS selectors</title>
+
+    <style>
+        .title {
+            background-color: olive;
+            color: white;
+            border: 3px solid black;
+            border-collapse: collapse;
+            font-size: 19px;
+            margin-bottom: 20px;
+        }
+
+        .table_title {
+            border: 3px solid black;
+            color: black;
+            font-size: 18px;
+            background-color: rgb(250, 153, 153);
+            border-collapse: collapse;
+            width: 250px;
+        }
+
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            color: black;
+        }
+
+        table,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            color: yellowgreen;
+        }
+
+        .box {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .source {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="title">
+        <b>Vancouver Vs. Toronto Population Growth</b>
+    </p>
+
+
+    <table class="box">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td class="table_title">
+                            <b>Vancouver Population Growth</b>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <th style="border-right-width:2px">Year</th>
+                        <th>Population</th>
+                        <th>+-%</th>
+                    </tr>
+                    <tr>
+                        <td style="border-right-width:2px"> 1891 </td>
+                        <td> 21,887</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td style="border-right-width:2px"> 1901 </td>
+                        <td> 42,926</td>
+                        <td>+96.1%</td>
+                    </tr>
+                    <tr>
+                        <td style="border-right-width:2px"> 1911 </td>
+                        <td> 164,926</td>
+                        <td>+282.1%</td>
+                    </tr>
+                </table>
+                <br>
+                <p class="source">
+                    Source: <a href="https://en.wikipedia.org/wiki/Demographics_of_Metro_Vancouver"> Wikipeda</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <table class="box">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td class="table_title">
+                            <b>Toronto Population Growth</b>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <th style="border-right-width:2px">Year</th>
+                        <th>Population</th>
+                        <th>+-%</th>
+                    </tr>
+                    <tr>
+                        <td style="border-right-width:2px"> 1834 </td>
+                        <td>9,252</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td style="border-right-width:2px"> 1901 </td>
+                        <td> 238,080</td>
+                        <td>+2473.3%</td>
+                    </tr>
+                    <tr>
+                        <td style="border-right-width:2px"> 1911 </td>
+                        <td> 381,383</td>
+                        <td>+60.2%</td>
+                    </tr>
+                </table>
+                <br>
+                <p class="source">
+                    Source: <a href="https://en.wikipedia.org/wiki/Demographics_of_Toronto"> Wikipeda</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
