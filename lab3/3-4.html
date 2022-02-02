@@ -1,30 +1,85 @@
-
 <html>
+
 <head>
     <style>
-        #header{
-            color:olive;
-            
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            padding: 10px;
+        }
+        h1, body{
+            margin: 0px;  /*reset css */
 
         }
-        #nav_bar{
-
+        #header {
+            background-color: olive;
+            text-align: center;
+            color: white;
+            margin: 0;
         }
-        #contents{
 
+        #footer {
+            clear: both;
+            background-color: olive;
+            text-align: center;
+            color:white;
+            margin: 0px;
+        
         }
-        #footer{
 
+        #nav {
+            background-color: grey;
+            float: left;
+            width: 20%;
+            height:50vh;
+            }
+
+        #main {
+            background-color: rgb(187, 230, 167);
+            float: left;
+            width:80%;
+            height:50vh;
         }
     </style>
 </head>
+
 <body>
-    <div id="cities"> </div>
-    <div id="article">
-        #nav_bar
-        width: 30% 
-        <!-- take 30% of parent's width! -->
-        #contents
+    <div id="header">
+        <h1>Cities</h1>
     </div>
+
+    <div id="nav">
+        <ul>
+            <li>
+                1
+            </li>
+
+            <li>
+                2
+            </li>
+
+            <li>
+                3
+            </li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In veniam quidem laudantium, magni nulla
+            blanditiis dolorem eligendi. Corrupti illo id officiis est? Nulla labore illum architecto omnis esse
+            possimus tenetur.
+            <img style="float:right;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/255px-Flag_of_Canada_%28Pantone%29.svg.png"
+            width="150px">
+        </p>
+       
+    </div>
+
+    <div id="footer">
+        <h1>Footer</h1>
+    </div>
+
 </body>
+
 </html>
