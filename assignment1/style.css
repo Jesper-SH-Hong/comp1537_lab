@@ -1,0 +1,155 @@
+*{
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+html{
+    height: 100vw;
+}
+
+body{
+    min-height: 100vw;
+}
+
+h2 {
+    font-family: serif;
+}
+
+table {
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 220px;
+    height: 320px;
+    background-color: rgb(205, 247, 241);
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+sup {
+    color: blue;
+}
+
+div h2 {
+    margin-top: 150px;
+}
+#header {
+    height: 3cm;
+}
+
+#nav {    
+    width: 15%;
+    height: 100vw;
+    float: left;
+    background-color: #f7f1f1;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.menu_container {
+    margin-top: 50px;
+}
+
+.menu_container a{
+    display: block;
+    padding-bottom: 5px;
+}
+#nav hr {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+#title {
+    padding-left: 10px;
+}
+#title_caption{
+    font-size: 9pt;
+    color: darkgray;
+}
+
+#title h1{
+    font-family: serif;
+}
+#article {
+    float: right;
+    width: 85%;
+    height: 17cm;    
+}
+
+#portrait_table{
+    float:right;
+    border: 3px solid lightgray;
+    margin-left: 30px;
+    }
+
+#portrait_table h3 {
+    margin: 0px;
+    text-align: center;
+    background-color: #f1f888;
+}
+
+#pronunciation {
+    text-align: center;
+    font-size: 14px;
+}
+#ramses2_img {
+    width: 200px;
+     height: 300px;
+     align-items: center;
+}
+
+
+#abstract {
+    
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#abstract a{
+    color:blue;
+}
+
+#contents_table {
+    width:max-content;
+    background-color: #f7f1f1;
+    height:auto;
+    margin-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+}
+
+#family {
+    padding-left: 20px;
+
+}
+
+#fam_img {
+    float: right;
+    height: 200px;
+    width: 200px;
+    margin-left: 30px;
+}
+
+#see_also {
+    padding-left: 20px;
+}
+
+#notes {
+    padding-left: 20px;
+}
+
+#citation {
+    padding-left: 20px;
+}
