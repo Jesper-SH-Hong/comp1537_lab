@@ -13,4 +13,4 @@ function setup() {
 }
 jQuery(document).ready(setup);
 
-//jquery아님 jQuery
+//jquery아님 jQuery 대문자 주의
