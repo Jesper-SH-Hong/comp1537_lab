@@ -3,9 +3,10 @@
     <title>Document</title>
 
     <style>
-        *{
+        * {
             box-sizing: border-box;
         }
+
         body {
             background-color: #f1f1f1;
             padding: 10px;
@@ -20,17 +21,17 @@
             background-color: #333;
             overflow: hidden;
         }
-        #topnav a{
+
+        #topnav a {
             color: #f2f2f2;
-            text-decoration: none;   /* it's link button.. don't show line after click */
+            text-decoration: none;  /* it's link button.. don't show line after click */
             display: block;
             padding: 14px 16px;
             float: left;
-            overflow: hidden;
+            text-align: center;
         }
 
         #left-column {
-            clear: both;
             width: 75%;
             float: left;
         }
@@ -52,23 +53,25 @@
             clear: both;
         }
 
+        #gallery {
+        }
+
 
         @media screen and (max-width: 600px) {
-            #left-column , #right-column{
-                width:100%;
-            }
-            #topnav a{
-                clear:both;
+
+            #left-column, #right-column {
+                width: 100%;
             }
         }
 
         @media screen and (max-width: 300px) {
-            #topnav {
-                float:none;  /* dddd */
+            #topnav a{
+                float: none !important;
+                clear: both;
+                /* dddd */
             }
 
         }
-
     </style>
 
 
@@ -85,7 +88,7 @@
         <a href="a">Link</a>
         <a href="a">Link</a>
         <a href="a">Link</a>
-        <a href="a" style= float:right;>Link</a>
+        <a href="a" style=float:right;>Link</a>
 
 
     </div>
@@ -113,6 +116,11 @@
                 optio
                 praesentium ea nemo soluta.
             </p>
+            <div id="gallery">
+                <img src="img/drink1.png" width=200px>
+                <img src="img/drink1.png" width=200px>
+            </div>
+
         </div>
     </div>
 
