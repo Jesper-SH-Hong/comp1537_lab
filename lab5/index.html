@@ -25,15 +25,21 @@
 
         #topnav a {
             color: #f2f2f2;
-            text-decoration: none;
-            /* it's link button.. don't show line after click */
-            display: block;
-            /* 이래야 padding 적용됨ㅋㅋ */
+            text-decoration: none;   /* it's link button.. don't show line after click */
+            display: block;          /* 이래야 padding 적용됨ㅋㅋ   a는 인라인*/
             padding: 14px 16px;
             float: left;
+            text-align: center;
         }
 
-        #gallery {
+        .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+        
+
+        #container {
             /* overflow: hidden; */
         }
 
@@ -41,24 +47,29 @@
             clear: both;
         }
 
-        #center {
-            width: 90%;     /* 90%해서 왼/오에 자리 좀 갖게 하려고 ㅋㅋ */
-            margin: 0 auto;  /* 좌우 여백 동일. auto
-
-        }
-
         #article {
             margin-bottom: 20px;
         }
 
+        #center {
+            width: 90%;     /* 90%해서 왼/오에 자리 좀 갖게 하려고 ㅋㅋ */
+            margin: 0 auto;  /* 좌우 여백 동일. auto */
+        }
+
+
         .photo_container {
-            /* display: inline; */
             width: 30%;
             float: left;
             /*  이렇게 해놓으면 왼쪽부터 1,2,3순으로 될 것wow..?! --> */
             padding: 10px;   /* 야 이러니까 간격 떨어지넼ㅋㅋ 위아래 */
-            border-radius: 5%;
+        }
 
+        img {
+            border-radius: 20%;
+        }
+
+        .photo_container img {
+            width: 100%
         }
 
         #footer {
@@ -71,7 +82,7 @@
             height: 20px;
         }
 
-        @media screen and(max-width:500px) {
+        @media screen and (max-width:500px) {
             .photo_container {
                 width: 100%;
                 float: none;
@@ -82,11 +93,11 @@
                 width: 90%;
             }
 
-            nav a {
-                width: 100%;
+            #topnav a {
                 float: none !important;
-                /* 뭐여..? */
+                width: 100%;
             }
+
         }
     </style>
 
@@ -103,64 +114,34 @@
         <a href="">Link 1</a>
         <a href="">Link 2</a>
         <a href="">Link 3</a>
-
-        <a href="" style="float:right">Link 4</a>
-
-
+        <a href="" style="float:right;"> Link 4 </a>
     </div>
+
     <div id="article">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto repudiandae dignissimos reiciendis officia earum
         consequatur facilis reprehenderit labore porro impedit, cumque libero? Sint eius molestiae, a aliquid quibusdam
         doloribus vero?
     </div>
 
-    <div id="gallery">
-        <div id="center">
-            <div class=" photo_container">
-                <img src=" https://picsum.photos/536/310">
-            </div>
+    <div class="clearfix">
+        <div id="container">
+            <div id="center">
+                <div class="photo_container">
+                    <img src=" https://picsum.photos/536/310">
+                </div>
 
-            <div class="photo_container">
-                <img src="https://picsum.photos/536/312">
-            </div>
+                <div class="photo_container">
+                    <img src="https://picsum.photos/536/312">
+                </div>
 
-            <div class="photo_container">
-                <img src="https://picsum.photos/536/313">
+                <div class="photo_container">
+                    <img src="https://picsum.photos/536/313">
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="gallery">
-        <div id="center">
-            <div class=" photo_container">
-                <img src=" https://picsum.photos/536/310">
-            </div>
 
-            <div class="photo_container">
-                <img src="https://picsum.photos/536/312">
-            </div>
-
-            <div class="photo_container">
-                <img src="https://picsum.photos/536/313">
-            </div>
-        </div>
-    </div>
-
-    <div id="gallery">
-        <div id="center">
-            <div class=" photo_container">
-                <img src=" https://picsum.photos/536/310">
-            </div>
-
-            <div class="photo_container">
-                <img src="https://picsum.photos/536/312">
-            </div>
-
-            <div class="photo_container">
-                <img src="https://picsum.photos/536/313">
-            </div>
-        </div>
-    </div>
 
 
     <div id="footer">
