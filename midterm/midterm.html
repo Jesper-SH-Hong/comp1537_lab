@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        a:hover {
+            color: lightgray;
+        }
+
+
+        #header {
+            width: 100%;
+            height: 30px;
+        }
+
+        #navbar_left {
+            float: left;
+            width: 33.3%;
+        }
+
+        navbar_left a {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        #page_name {
+            float: none;
+            display: inline-block;
+            margin: 30px 0px;
+        }
+
+        #navbar_right {
+            float: right;
+            width: 33.3%;
+            text-align: center;
+        }
+
+        #quote1 {
+            margin-top: 100px;
+            clear: both;
+        }
+
+        #body {
+            width: 100%;
+        }
+
+
+        #left_col {
+            width: 33%;
+            float: left;
+        }
+
+        #right_col {
+            width: 33%;
+            float: left;
+        }
+
+        #middle_col {
+            max-width: 33.3%;
+            float: left;
+        }
+
+        #img {
+            width: 33.3%;
+        }
+
+        .clearfix {
+            width: 100%;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        #footer {
+            width: 100%;
+            height: 100px;
+            background-color: red;
+            text-align: center;
+            vertical-align: center;
+        }
+
+        #footer_link {
+            display: inline-block;
+            background-color: white;
+            text-align: center;
+            vertical-align: center;
+        }
+
+
+        @media screen and (max-width:500px) {
+
+            #header {
+                display: none;
+            }
+
+            .clearfix {
+                width: 100%;
+                float: none;
+                padding: 10px 0px 10px 0px;
+            }
+
+            #left_col {
+                width: 33%;
+                float: none !important;
+            }
+
+            #right_col {
+                width: 33%;
+                float: none !important;
+            }
+
+            #middle_col {
+                max-width: 33.3%;
+                float: none !important;
+            }
+
+
+
+            #topnav a {
+                float: none !important;
+                width: 100%;
+            }
+
+            #footer {
+                width: auto;
+            }
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div id="header">
+        <nav id="navbar_left">
+            <a href="">Math</a>
+            <a href="">Art</a>
+            <a href="">Astronomy</a>
+        </nav>
+
+        <div id="page_name">
+            LEONARDO DA VINCI
+        </div>
+
+        <nav id="navbar_right">
+            <a href="">Wiki</a>
+            <a href="">Inventions</a>
+            <a href="">Anatomy</a>
+
+        </nav>
+    </div>
+
+    <div id="quote1">
+        <center>
+            <blockquote>
+                "Learning never exhausts the mind."
+            </blockquote>
+            <h3>-LEONARDO DA VINCI</h3>
+        </center>
+    </div>
+
+    <div class="clearfix">
+        <div id="left_col">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg/800px-Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg"
+                width="100%">
+        </div>
+
+        <div id="middle_col">
+            <blockquote>"There may not be in the world an example of another genius so universal, so incapable of
+                fulfilment, so full of yearning for the infinite, so naturally refined, so far ahead of his own
+                century
+                and the following centuries."</blockquote>
+            <center>
+                <h3> - HIPPOLYTE TAINE</h3>
+            </center>
+        </div>
+
+        <div id="right_col">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/800px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+                width="100%">
+        </div>
+
+    </div>
+
+
+    <p>
+        <center>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore facere, cupiditate eligendi, fuga
+            dignissimos sapiente expedita animi impedit soluta nemo quasi. Maxime sint laboriosam voluptas mollitia
+            quae. Quae, illum rerum?
+        </center>
+    </p>
+    </div>
+
+    <div id="footer">
+        <center>
+            <div id=footer_link>
+                <a id="footer_link" href>READ MORE ON WIKI</a>
+            </div>
+        </center>
+    </div>
+
+
+    </footer>
+
+</body>
+
+</html>
