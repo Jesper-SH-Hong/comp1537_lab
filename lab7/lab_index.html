@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="lab_code.js"></script>
+
+    <style>
+        * {
+            /* width: fit-content; */
+        }
+
+        #calculator{
+            width:300px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .add {
+            background-color: red;
+        }
+
+        .subtraction {
+            background-color: green;
+        }
+
+        .multiplication {
+            background-color: lightblue;
+        }
+
+        .division {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="calculator">
+        <label for="operand1"> First operand</label><br>
+        <input type="text" id="op1">
+        <br>
+        <label for="operand2"> Second operand</label><br>
+        <input type="text" id="op2">
+        <br>
+        <input type="button" class="button_ .hide" value="+" id="plus">
+        <input type="button" class="button_ .hide" value="-" id="minus">
+        <input type="button" class="button_ .hide" value="*" id="times">
+        <input type="button" class="button_ .hide" value="/" id="divide">
+        <!-- <input type="button" class="button_" value="Increase Font" id="increase_font">
+        <input type="button" class="button_" value="Decrease Font" id="decrease_font"> -->
+
+
+        <div id="result">
+
+        </div>
+
+        <h1>History</h1>
+
+        <div id="history">
+        </div>
+    </div>
+
+</body>
+
+</html>
