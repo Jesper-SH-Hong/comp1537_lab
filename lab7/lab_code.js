@@ -3,7 +3,7 @@ function calc(operator) {
     op2 = jQuery('#op2').val()
     op1_int = parseInt(op1)
     op2_int = parseInt(op2)
-    button_text = "<button class='hide_1'> remove this </button>"
+    button_text = "'      ' + <button class='hide_1'> remove this </button>"
     // operator = "+"
 
     switch (operator) {
