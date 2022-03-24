@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="code.js"></script>
+    <title>Movie_DB</title>
+
+    <style>
+        /* #prev {
+            display: none;
+        }
+        #next {
+            display: none;
+        }         */
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <button id="first" class="numbered">First</button>
+        <button id="prev" class="prev">Prev</button>
+
+        <div id="numbered_buttons_id">
+                <!-- to be added using jquery or js -->
+        </div>
+        <!-- <button id="1" class="numbered_buttons">1</button>
+        <button id="2" class="numbered_buttons">2</button>
+        <button id="3" class="numbered_buttons">3</button>
+        <button id="4" class="numbered_buttons">4</button>
+        <button id="5" class="numbered_buttons">5</button>
+        <button id="6" class="numbered_buttons">6</button>
+        <button id="7" class="numbered_buttons">7</button> -->
+        <button id="next" class="next">Next</button>
+        <button id="last" class="numbered">Last</button>
+    </header>
+
+
+    <div id="movie_card_" style="width: 50%;">
+        <!-- Page size:
+        <select name="page_size" id="page_size_">
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="8">8</option>
+            <option value="20">20</option>
+        </select>
+    </div> -->
+    <br>
+    Search TMDB by title<input type="text" value="" id="movie_name_">
+    <button id="get_movie">
+        Search
+    </button>
+
+    <p id="results_"></p>
+    </div>
+
+
+    <div id="right_div" style="width: 50%; float: right;">
+    </div>
+
+</body>
+
+</html>

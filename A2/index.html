@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="code.js"></script>
+    <title>Movie_DB</title>
+
+    <style>
+        #left_div {
+            float: left;
+        }
+        #right_div{
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div id="left_div" style="width: 50%;">
+
+        Page size: 
+        <select name="page_size" id="page_size_">
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="8">8</option>
+            <option value="20">20</option>
+        </select>
+        <br>
+        Search TMDB by title <input type="text" value="" id="movie_name_">
+        <button id="search_button">
+            Search
+        </button>
+
+        <div id="all_page_buttons">
+            <button id="first" class="numbered">First</button>
+            <button id="prev" class="prev">Prev</button>
+            <span id="numbered_buttons_group_">
+                <!-- to be added using jquery or js -->
+            </span>
+            <button id="next" class="next">Next</button>
+            <button id="last" class="numbered">Last</button>
+        </div>
+
+
+        <p id="results_"></p>
+    </div>
+
+
+    <div id="right_div" style="width: 50%;">
+    </div>
+
+</body>
+
+</html>
