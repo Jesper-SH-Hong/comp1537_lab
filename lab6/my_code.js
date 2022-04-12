@@ -37,7 +37,7 @@ function add() {
     }
 
     
-    html 메서드에서 html 코드를 이 JS 코드에 inject하는거야 이렇게 ''나 ""f로 ㅋㅋ
+    html 메서드에서 html 코드를 이 JS 코드에 inject하는거야 이렇게 ''나 ""로 ㅋㅋ
     왜 class 'blue'라 했냐면 "div"에서 이미 더블코테이션 썼으니까..
     안 그럼 브라우저가 헷갈림
     서로 구분 가능학 ㅔ그렇게 해 ㅎㅎ

@@ -3,7 +3,7 @@ function calc(operator) {
     op2 = jQuery('#op2').val()
     op1_int = parseInt(op1)
     op2_int = parseInt(op2)
-    button_text = "'      ' + <button class='hide_1'> remove this </button>"
+    button_text = "<button class='hide_1'> remove this </button>"
     // operator = "+"
 
     switch (operator) {
@@ -48,7 +48,7 @@ function hide_() {
 
 //.hide가 그 당시에 업던거야..  그럼 어케 했어 옜날에 bind함수를 썼어 jquery는
 //요새는 .on이란 메서드를 씀. 2개의 인자 
-//.ㅐㅜ("click", hide_)  이벤트랑 ,,를 받음.
+//.on("click", hide_)  이벤트랑 ,,를 받음.
 //디코에 캡쳐된 슬라이드 보면 어떤 이벤트..든 간에 저 ㅋㄹ릭,키터치 등등 다.. .on이벤트로 핸들링 가능. 첫 인자가 이벤트의 타입이어야 함. 둘은 같은 거임
 // .click이랑 .on 슬라이드
 
@@ -62,8 +62,8 @@ function setup() {
     });
 
     // $('.hide').click(hide_) // 안돼! 이제 on으로쓰자!ㅋㅋ
-    // $('.hide').on(hide_) // 안돼! 이제 on으로쓰자!ㅋㅋ... 근데 이것도 dom이 구현이 안됐어
-    $('body').on("click", '.hide_1', hide_) // 그르ㅐ서 인자가 3개여야 함. 2번쨰가 ht런츠면 오키ml elem. page creation 당시 body는 있었으니까!! 코ㄹ 가능한 거 ㅎㅎ 바디 아니어도 첨에 콜되는 패
+    // $('.hide').on(hide_) // ㅇㅋ on. 근데 이것도 dom이 구현이 안됐어
+    $('body').on("click", '.hide_1', hide_) // 그르ㅐ서 인자가 3개여야 함. 2번쨰가 ht런츠면 오키ml elem. page creation 당시 body는 있었으니까!! 콜 가능한 거 ㅎㅎ 바디 아니어도 첨에 콜되는 패
             //setup에서 $(document). 자체가 이미 html을 다 구현하고 div랑 html 배치를 다 끝낸 뒤에 setup 콜하는 거임..
             //.hide는 이 js 안에서 구현된 클래스
 
