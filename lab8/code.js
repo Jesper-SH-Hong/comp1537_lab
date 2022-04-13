@@ -1,6 +1,6 @@
 function get_movie_fn(data) {
     // alert()
-    // console.log(data);
+    console.log(data);
     for (i = 0; i < data.results.length; i++) {
         $("#results_").append(data.results[i].original_title + "<br>")
         $("#results_").append(data.results[i].overview + "<br>")
